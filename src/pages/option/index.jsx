@@ -1,13 +1,19 @@
 import Layout from "@/components/layout/Layout";
 import RecentNews from "@/components/option/RecentNews";
+import Head from "next/head";
 
 const Option = () => {
   return (
-    <Layout>
-      <div className="pt-16">
-        <RecentNews />
-      </div>
-    </Layout>
+    <>
+      <Head>
+        <title>Option | Relight News </title>
+      </Head>
+      <Layout>
+        <div className="pt-16">
+          <RecentNews />
+        </div>
+      </Layout>
+    </>
   );
 };
 
