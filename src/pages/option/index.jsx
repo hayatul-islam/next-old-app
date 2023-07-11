@@ -1,14 +1,14 @@
 import Layout from "@/components/layout/Layout";
-import BrakingNews from "@/components/top-stores/BrakingNews";
+import RecentNews from "@/components/option/RecentNews";
 
-const TopStores = () => {
+const Option = () => {
   return (
     <Layout>
       <div className="pt-16">
-        <BrakingNews />
+        <RecentNews />
       </div>
     </Layout>
   );
 };
 
-export default TopStores;
+export default Option;

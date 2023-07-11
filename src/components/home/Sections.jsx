@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SectionTitle from "../common/SectionTitle";
 
 const Sections = () => {
   const fakeData = [
@@ -26,10 +27,7 @@ const Sections = () => {
   ];
   return (
     <div className="py-12 max-w-[1400px] mx-auto px-6 xl:px-0">
-      <div className="text-primary font-bold text-center space-y-6">
-        <h2 className="text-4xl md:text-6xl font-primary">Sections</h2>
-        <span className="block w-12 border-b-2 mx-auto"></span>
-      </div>
+      <SectionTitle title="Sections" />
       <div className="pt-8 space-y-6">
         {fakeData?.map((data, idx) => (
           <div key={idx} className="grid md:grid-cols-2 items-center gap-6">

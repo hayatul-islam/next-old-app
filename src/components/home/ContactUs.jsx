@@ -1,15 +1,14 @@
+"use client";
 import Image from "next/image";
 import { useState } from "react";
+import SectionTitle from "../common/SectionTitle";
 
 const ContactUs = () => {
   const [isMessage, setIsMessage] = useState(false);
   return (
     <div className="bg-primary-3">
-      <div className="py-12 max-w-[1400px] mx-auto px-6 xl:px-0">
-        <div className="text-primary font-bold text-center space-y-6">
-          <h2 className="text-4xl md:text-6xl font-primary">Contact Us</h2>
-          <span className="block w-12 border-b-2 mx-auto"></span>
-        </div>
+      <div className="py-12 max-w-[1400px] mx-auto px-6 xl:px-4">
+        <SectionTitle title="Contract Us" />
         <div className="pt-8 space-y-6">
           <div className="grid md:grid-cols-2 items-center gap-12">
             {isMessage ? (
